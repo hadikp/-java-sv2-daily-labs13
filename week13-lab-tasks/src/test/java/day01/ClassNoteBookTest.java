@@ -35,10 +35,6 @@ class ClassNoteBookTest {
     void testAddMark() {
         classNote.addMark(1, 5);
         System.out.println(classNote.getStudents());
-
-
-
-
     }
 
 }
