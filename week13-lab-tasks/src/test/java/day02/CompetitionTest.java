@@ -13,12 +13,26 @@ class CompetitionTest {
     void init() {
         String fileName = "src/test/resources/result.txt";
         competition = new Competition();
-        competition.makeReacer(fileName);
+        competition.makeReacerList(fileName);
+        competition.makeRacerMap();
     }
 
     @Test
-    void testsortRaecerList() {
-        competition.sorRacerList();
+    void testMakeRacerMap() {
+        System.out.println(competition.getRacersMap());
+
+    }
+
+    @Test
+    void testisAnswerGood() {
+        assertEquals("A válasz helyes!", competition.isAnswerGood("GH1234", 1));
+        assertEquals("A válasz helytelen!", competition.isAnswerGood("AB123", 2));
+    }
+
+    @Test
+    void testBestPointsRacer() {
+        assertEquals("GH1234", competition.bestPointsRacer());
+        System.out.println(competition.getResult());
 
     }
 
