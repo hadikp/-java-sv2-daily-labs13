@@ -11,5 +11,5 @@ többször is szerepel benne. A kezdő összeg a számláján mindenkinél 0Ft.
 
 A megoldásnak így kell kinéznie:
 
-`Ügyfelek`      `Utalások összege` `Tranzakciók száma`
-![Result](C:\H\ujratervez2021\SEalapok1\HetiFeladatok13\week13-lab-tasks\src\test\resources\transfer_result.png)
+&nbsp;`Ügyfelek` &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     `Utalások összege` &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `Tranzakciók száma`
+![Result](C:\H\ujratervez2021\SEalapok1\HetiFeladatok13\week13-lab-tasks\src\main\java\day06\transfer_result.png)
