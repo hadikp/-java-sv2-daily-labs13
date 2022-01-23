@@ -7,9 +7,10 @@ import static org.junit.jupiter.api.Assertions.*;
 class EnglishTextTest {
 
     @Test
-    void testCharAt() {
+    void testMakeMapFromText() {
         EnglishText englishText = new EnglishText();
-        englishText.makeMapFromText("font");
+        englishText.makeMapFromText("specialist");
+        System.out.println(englishText.getVowels());
     }
 
 }

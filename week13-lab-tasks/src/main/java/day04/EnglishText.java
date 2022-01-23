@@ -9,7 +9,19 @@ public class EnglishText {
 
     public void makeMapFromText(String text) {
         for (int i = 0; i < text.length(); i++) {
-            System.out.println(text.charAt(i));
+            char letter = text.charAt(i);
+           if (letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u') {
+               Integer  value = vowels.get(letter);
+               if (value == null) {
+                   vowels.put(letter, 1);
+               } else {
+                   vowels.put(letter, value+1);
+               }
+           }
         }
+    }
+
+    public Map<Character, Integer> getVowels() {
+        return vowels;
     }
 }
